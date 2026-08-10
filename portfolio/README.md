@@ -1,16 +1,98 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive and modern **Personal Portfolio Website** built using React.js. This portfolio showcases my education, skills, projects, and contact information.
 
-Currently, two official plugins are available:
+# About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This project is a personal portfolio website created as part of my Full Stack Development training.
 
-## React Compiler
+It provides an overview of my technical skills, educational background, projects, and experience as a Computer Engineering student and fresher.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Features
 
-## Expanding the ESLint configuration
+* Responsive portfolio design
+* About Me section
+* Education section
+* Skills section
+* Projects section
+* Contact section
+* Modern and clean user interface
+* React component-based structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# Technologies Used
+
+* React.js
+* JavaScript
+* HTML
+* CSS
+* Vite
+
+
+# Project Structure
+
+```text id="0i2m1q"
+portfolio/
+│
+├── public/
+├── src/
+│   ├── components/
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── ...
+│
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+# How to Run
+
+Clone the repository and navigate to the portfolio folder:
+
+```bash
+cd portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in the terminal.
+
+# Learning Objectives
+
+This project helped me understand:
+
+* React components
+* JSX
+* Props and state
+* React project structure
+* CSS styling
+* Responsive web design
+* React hooks
+* npm and Vite
+* Git and GitHub
+
+# Future Improvements
+
+* Add animations and transitions
+* Add downloadable resume
+* Add more projects
+* Add dark/light mode
+* Deploy the portfolio online
+
+# Author
+
+Alok Kumar
+
+Computer Engineering Student
+Full Stack Development Training
