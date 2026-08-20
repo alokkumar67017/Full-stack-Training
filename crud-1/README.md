@@ -1,18 +1,50 @@
-# React + Vite
+# React CRUD Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a CRUD (Create, Read, Update, Delete) application developed using React.js.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Create new student data
+- Read/display student data
+- Update student data
+- Delete student data
+- REST API integration using Axios
+- React Router for page navigation
+- Bootstrap for UI styling
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+- React.js
+- JavaScript
+- Axios
+- React Router DOM
+- Bootstrap
+- MockAPI
 
-Note: This will impact Vite dev & build performances.
+## Student Fields
 
-## Expanding the ESLint configuration
+- ID
+- Name
+- Age
+- Email
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## CRUD Operations
+
+### Create
+Add a new student with name, age and email.
+
+### Read
+Display all student records in a table.
+
+### Update
+Edit existing student information.
+
+### Delete
+Delete a student record after confirmation.
+
+## How to Run
+
+Clone the repository:
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
