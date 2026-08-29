@@ -1,0 +1,240 @@
+.navbar {
+  width: 100%;
+  height: 75px;
+
+  background-color: #fff8f3;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 60px;
+
+  box-sizing: border-box;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+
+  position: sticky;
+  top: 0;
+
+  z-index: 1000;
+}
+
+
+/* Logo */
+
+.logo a {
+  text-decoration: none;
+
+  color: #8b4a4a;
+
+  font-size: 28px;
+
+  font-weight: bold;
+}
+
+
+/* Navigation */
+
+.nav-menu {
+  display: flex;
+
+  align-items: center;
+
+  gap: 35px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+
+  color: #4b3030;
+
+  font-size: 16px;
+
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #c87979;
+}
+
+
+/* Order Button */
+
+.order-btn {
+  text-decoration: none;
+
+  border: none;
+
+  background-color: #b86b6b;
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 25px;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background-color: #8f4f4f;
+}
+
+
+/* Mobile order button */
+
+.mobile-order-btn {
+  display: none;
+}
+
+
+/* Hamburger */
+
+.menu-toggle {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+
+  background: transparent;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 5px;
+
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+
+  width: 25px;
+  height: 3px;
+
+  background-color: #4a2929;
+
+  border-radius: 5px;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 0 30px;
+  }
+
+  .nav-menu {
+    gap: 20px;
+  }
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    height: 70px;
+
+    padding: 0 20px;
+  }
+
+
+  .logo a {
+    font-size: 23px;
+  }
+
+
+  /* Hide desktop menu */
+
+  .nav-menu {
+    display: none;
+
+    position: absolute;
+
+    top: 70px;
+    left: 0;
+
+    width: 100%;
+
+    background-color: #fff8f3;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 0;
+
+    padding: 20px 0;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  }
+
+
+  /* Show menu */
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+
+  .nav-menu a {
+    width: 100%;
+
+    text-align: center;
+
+    padding: 15px 0;
+
+    font-size: 17px;
+  }
+
+
+  /* Hide desktop button */
+
+  .order-btn {
+    display: none;
+  }
+
+
+  /* Show mobile order */
+
+  .mobile-order-btn {
+    display: block !important;
+
+    width: auto !important;
+
+    background-color: #b86b6b;
+
+    color: white !important;
+
+    padding: 11px 25px !important;
+
+    margin-top: 10px;
+
+    border-radius: 25px;
+  }
+
+
+  /* Show hamburger */
+
+  .menu-toggle {
+    display: flex;
+  }
+
+}

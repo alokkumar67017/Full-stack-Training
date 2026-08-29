@@ -44,12 +44,17 @@ function Read() {
         });
     }
   };
+  // UPDATE USER
+  const setDataToStorage = (id, name, age, email) => {
+    localStorage.setItem("id", id);
+    localStorage.setItem("name", name);
+    localStorage.setItem("age", age);
+    localStorage.setItem("email", email);
 
-  //    update user
-  // const editUser = {result}=>{
+   navigate(`/update/${id}`);
+  };
 
 
-  //}
 
   useEffect(() => {
     getData();
@@ -70,7 +75,7 @@ function Read() {
         </div>
 
 
-    
+
 
         {/* <div className="bg-primary text-white p-3 text-center mb-3">
           <h4>Student Data</h4>
@@ -105,10 +110,14 @@ function Read() {
 
                   <td>
                     <button
+
                       className="btn btn-warning"
-                      onClick={() =>
-                        navigate(`/update/${item.id}`)
-                      }
+                      onClick={() => setDataToStorage(
+                        item.id,
+                        item.s_name,
+                        item.s_age,
+                        item.s_email,
+                      )}
                     >
                       Edit
                     </button>
